@@ -1,0 +1,82 @@
+/* --------- Styles pour le header --------- */
+.black{
+   width: 100%; /* Prend toute la largeur de la page */
+   height: 135px; /* Hauteur fixe pour un design cohérent */
+   padding: 20px; /* Ajoute de l'espace interne */
+   margin-bottom: 40px;
+   position: fixed; /* Reste visible en haut lors du défilement */
+   top: 0; /* Fixe le header en haut de la page */
+   background-color: transparent; /* Fond transparent pour laisser apparaître le fond global */
+   z-index: 3; /* Place le header au-dessus des autres éléments */
+}
+
+.header {
+   width: 100%; /* Prend toute la largeur de la page */
+   height: 95px; /* Hauteur fixe pour un design cohérent */
+   padding: 20px; /* Ajoute de l'espace interne */
+   margin-bottom: 40px;
+   display: flex; /* Flexbox pour l'alignement */
+   justify-content: center; /* Centre horizontalement les éléments */
+   align-items: center; /* Centre verticalement les éléments */
+   position: sticky; /* Reste visible en haut lors du défilement */
+   top: 0; /* Fixe le header en haut de la page */
+   background-color: transparent; /* Fond transparent pour laisser apparaître le fond global */
+   z-index: 5; /* Place le header au-dessus des autres éléments */
+ } 
+ 
+ /* --------- Styles pour le conteneur de navigation --------- */
+ .header__nav {
+     width: 90%; /* Largeur relative pour s'adapter à la taille de la page */
+     max-width: 1000px; /* Limite la largeur maximale */
+     height: 70px; /* Hauteur fixe pour la navigation */
+     border-radius: 20px;
+     display: flex; /* Flexbox pour organiser les éléments */
+     justify-content: space-between; /* Espace entre les éléments enfants */
+     align-items: center; /* Alignement vertical au centre */
+     padding: 0px 20px; /* Espacement interne horizontal */
+     background-color:transparent; /* Couleur de fond */
+     padding: 10px;
+     backdrop-filter: blur(10px);
+     background-image: linear-gradient(
+        120deg,
+        rgba(242, 242, 242, 0.3),
+        rgba(0,0,0,0.2)
+     );
+     box-shadow: 0px 2px 2px  #666666;
+     transition: transform 300ms;
+ }
+ 
+ /* --------- Styles pour les boutons de navigation --------- */
+ .nav__button {
+    text-decoration: none; /* Retire le soulignement */
+     display: flex; /* Flexbox pour gérer les éléments internes */
+     padding: 8px 20px; /* Ajoute de l'espace interne */
+     font-family: var(--satoshi); /* Police personnalisée */
+     color: white; /* Couleur du texte */
+     font-size: 16px; /* Taille du texte */
+     font-weight: 600; /* Texte semi-gras */
+     border: none; /* Supprime les bordures */
+     background-color:  transparent;
+     cursor: pointer; /* Change le curseur au survol */
+     transition: background-color 300ms ease; /* Transition douce pour les changements de couleur */
+     border-radius: 10px; /* Coins légèrement arrondis */
+     gap: 2px; /* Espace entre les éléments internes */
+ }
+ 
+ /* --------- Effet au survol des boutons --------- */
+ .P:hover, .I:hover, .D:hover {
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(
+       20deg,
+       rgba(179, 179, 179, 0.3),
+       rgba(65, 65, 65, 0.2)
+    );
+    box-shadow: 0px 1px 1px  #666666;
+ }
+
+ .header__nav:hover{
+    transform: translateY(15px);
+ }
+ 
+
+ 

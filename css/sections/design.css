@@ -1,0 +1,136 @@
+/*---------------DESIGN-----------------------------------------*/
+.Design{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+ /* background-image: url(Fondtest.png);*/
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-auto-rows: 90px;
+  gap: 10px; 
+}
+
+.item {
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: relative; /* Définit un contexte pour l'élément enfant */
+  width: 100%;       /* Largeur de l'élément */
+  height: 100%;      /* Hauteur de l'élément */
+  overflow: hidden;  /* Évite que le texte dépasse si nécessaire */
+}
+
+.item img {
+  width: 100%;       /* L'image occupe toute la largeur */
+  height: 100%;      /* L'image occupe toute la hauteur */
+  object-fit: cover; /* Recadre l'image si besoin */
+  transition: transform 1s, filter 300ms ease-in-out;
+  filter: blur(1.2px);
+  transform: scale(1.3);
+}
+
+.item h2 {
+  font-family: var(--satoshi);
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;    /* Positionnement absolu */
+  top: 10%;              /* Centré verticalement */
+  left: 50%;   
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transform: translate(-50%, -50%); /* Ajuste pour un centrage parfait */
+  color: white;          /* Couleur du texte */
+  margin: 0;             /* Supprime les marges */
+}
+
+.item p {
+  background-color: transparent;
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.3s ease-out;
+  inset: auto auto 1px 15px;
+  transition: 0.3s ease-in;
+}
+
+.graphisme {
+  grid-column: 1 / 10; 
+  grid-row: 1 / 3;
+  background-color: rgb(152, 152, 152);
+}
+
+.matiere {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  background-color: rgb(152, 152, 152);
+}
+
+.sculpture {
+  grid-column: 5 / 10;
+  grid-row: 3/ 5;
+  background-color: rgb(152, 152, 152);
+}
+
+.sketch{
+  grid-column: 1 / 6;
+  grid-row: 5/ 8;
+  background-color: rgb(152, 152, 152);
+
+}
+
+.after{
+  grid-column: 6 / 10;
+  grid-row: 5/ 8;
+  background-color: rgb(152, 152, 152);
+
+}
+
+.troisd {
+  grid-column: 10 / 13;
+  grid-row: 1 / 6;
+  background-color: rgb(152, 152, 152);
+  font-size: 18px;
+  text-align: center;
+}
+
+.switch {
+  grid-column: 10 / 13;
+  grid-row: 6 / 8;
+  transition: 300ms ease-in;
+}
+
+.item:hover img {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 300ms ease-out;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.item:hover h2 {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.item:hover p{
+  opacity: 1;
+  inset: auto auto 20px 10px; 
+  transition: opacity 0.3s 0.1s ease-in;
+}

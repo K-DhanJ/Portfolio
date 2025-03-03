@@ -1,0 +1,132 @@
+/*---------------PROJET-----------------------------------------*/
+.Projet{
+  height: 700px;
+  width: 100%;
+/*  background-image: url(Fondtest.png);*/
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+   
+.slider{
+  top: 10%;
+  position: relative;
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+   
+.card {
+  width: 450px;   
+  height: 400px;  
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  color: #f0f0f0;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px 0px rgba(0, 0, 0, 0.5);
+  gap: 20px;
+  transition: 500ms;
+  margin: 40px;
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 200ms ease-out;
+}
+
+.card h2 {
+  background-color: transparent;
+  position: absolute;
+  inset: auto auto 20px 15px; 
+  margin: 0;
+  transition: inset 300ms 300ms ease-out;
+  font-family: var(--satoshi);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.card p {
+  background-color: transparent;
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  font-weight: 500;
+  font-size: 14px;
+  inset: auto auto 30px 12px; 
+  transition: opacity 0.3s ease-out;
+}
+
+.card:hover {
+  width: 490px;   
+  height: 440px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+
+}
+
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.7;
+}
+
+.card:hover h2 {
+  inset: auto auto 45px 12px; 
+  transition: inset 0.3s ease-out;
+}
+
+.card4:hover h2 {
+  inset: auto auto 65px 12px; 
+  transition: inset 0.3s ease-out;
+}
+
+.card5:hover h2 {
+  inset: auto auto 65px 12px; 
+  transition: inset 0.3s ease-out;
+}
+
+.card:hover p{
+  opacity: 1;
+  inset: auto auto 30px 12px; 
+  transition: opacity 0.3s 0.1s ease-in;
+}
+
+#next{
+  position: absolute;
+  right: 10%;
+}
+
+#prev{
+  position: absolute;
+  left: 10%;
+}
+
+#prev, #next{
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 300ms;
+  transition: font-size 0.2s ease-out;
+  top: 49%;
+}
+
+#prev:hover,
+#next:hover{
+  opacity: 1;
+  font-size: 40px;
+  transition: font-size 300ms;
+  cursor: pointer;
+}

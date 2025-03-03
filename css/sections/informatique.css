@@ -1,0 +1,130 @@
+/*---------------INFORMATIQUE-----------------------------------------*/
+.Informatique {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  margin: 0;
+/*  background-image: url(Fondtest.png); */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.rendu {
+  z-index: 2;
+  display: flex;
+  justify-content: first baseline;
+  width: 400px;   
+  height: 130px;  
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
+  background-color:transparent; /* Couleur de fond */
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(
+     120deg,
+     rgba(242, 242, 242, 0.3),
+     rgba(0,0,0,0.2)
+  );
+  box-shadow: 0px 2px 2px  #666666;
+  transition: 300ms ease-in;
+}
+
+.image{
+  background-color:rgb(50, 50, 50) ;
+  width: 40%;
+  height: 100%;
+}
+
+.image img {
+  width: 100%;       /* L'image occupe toute la largeur */
+  height: 100%;      /* L'image occupe toute la hauteur */
+  object-fit: cover; /* Recadre l'image si besoin */
+}
+
+.textinfo {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 150px;
+}
+
+.text h3{
+  margin: 0; /* Supprime les marges des éléments texte */
+  padding: 0; /* Supprime les paddings éventuels */
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.rendu p {
+  margin-top: 12px;
+  opacity: 0;
+  max-width: 80%;
+  font-weight: 300;
+  font-size: 12px;
+  transition: 0.3s ease-in;
+}
+
+.ligne1 {
+  display: flex;
+  justify-content: center;
+}
+
+.ligne2 {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 130px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: transparent;
+  overflow: hidden; /* Empêche la vidéo de dépasser */
+}
+
+.info video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplit complètement le conteneur en recadrant si nécessaire */
+}
+
+
+.info h3{
+  font-weight: 450;
+  font-size: 18px;
+  position: absolute;
+}
+
+.ligne3 {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none; /* Enlève le soulignement */
+  color: inherit; /* Hérite de la couleur du texte parent, sinon tu peux définir une couleur spécifique */
+}
+
+a:focus, a:hover {
+  outline: none; /* Retire la bordure autour du lien lors de l'interaction */
+  text-decoration: none; /* Assure que le lien n'a pas de soulignement au survol */
+}
+
+.rendu:hover {
+  width: 420px;   
+  height: 150px;
+  transition: 0.3 ease-out;
+}
+
+.rendu:hover p{
+  opacity: 100%;
+}

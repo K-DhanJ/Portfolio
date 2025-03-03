@@ -1,0 +1,106 @@
+.launcher{
+    width: 100%;
+    height: 700px;
+    padding: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blabla {
+    height: 850px;
+    width: auto;
+    text-align: center;
+    line-height: 1.3;
+    overflow: hidden; /* Cache le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+    white-space: normal; /* Permet au texte de revenir à la ligne */
+    word-wrap: break-word; /* Permet de couper les mots longs pour éviter le débordement */
+}
+
+.title{
+    font-size: 20px;
+    font-family: var(--satoshi);
+    font-weight: 800;
+    margin-bottom: 200px;
+}
+
+.ingame{
+    margin-top: 100px;
+    background-color: aliceblue;
+    height: 550px;
+    width: 650px;
+}
+
+.screen_info{
+    padding: 60px;
+    margin-bottom: 100px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trait{
+    width: 100%;
+    border-top: 2px solid white;
+    margin-bottom: 100px;
+}
+
+.screen{
+    display: flex;
+    justify-content: space-around;
+}
+
+.video{
+    height: 600px;
+    width: 600px;
+    background-color: blueviolet;
+    border-radius: 35px;
+}
+
+.img_code{
+    height: 600px;
+    width: 600px;
+    background-color: bisque;
+    border-radius: 35px;
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+}
+.info_suiv{
+    height: 300px;
+    width: 50%;
+    background-color: aquamarine;
+    border-radius: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.boutton_suiv{
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: rgba(252, 252, 252, 0);
+    transition: 300ms ease-in;
+}
+
+
+.boutton_suiv:hover{
+    cursor: pointer;
+    background-color: rgba(254, 254, 254, 0.9);
+    transition: 300ms ease-out;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+    transition: 300ms ease-out;
+    height: 90px;
+    width: 90px;
+}
+
+#infos{
+    line-height: 1.5;
+}

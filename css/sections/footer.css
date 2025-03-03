@@ -1,0 +1,61 @@
+.footer{
+     width: 100%;
+     height: 25px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color:transparent; /* Couleur de fond */
+     padding: 10px;
+     backdrop-filter: blur(20px);
+     background-image: linear-gradient(
+        120deg,
+        rgba(242, 242, 242, 0.3),
+        rgba(0,0,0,0.2)
+     );
+     box-shadow: 0px 2px 2px  #666666;     border-radius: 50px 50px 0px 0px;
+     padding: 0px 50px;
+     bottom: 0;
+     position: fixed;
+     z-index: 5;
+}
+
+.me{
+     background-color: transparent;
+     font-family: var(--satoshi);
+     font-weight: 300;
+     border: none;
+     text-decoration: none;
+     transition: 300ms ease-in ;
+}
+
+.langue{
+     background-color: transparent;
+     padding-bottom: 5px;
+}
+.fr,.en{
+     text-decoration: none;
+     padding-left: 5px;
+     padding-right: 5px;
+     font-family: var(--satoshi); /* Police personnalisée */
+     color:white;
+     font-size: 7px; /* Taille du texte */
+     font-weight: 500;
+     border: none; /* Supprime les bordures */
+     background-color: transparent;
+     cursor: pointer; /* Change le curseur au survol */
+     transition: 300ms ease-in; /* Transition douce pour les changements de couleur */
+}
+
+.fr:hover, .en:hover {
+     font-size: 10px;
+     color: aqua;
+     transition: 300ms ease-in; /* Transition douce pour les changements de couleur */
+
+}
+
+.me:hover{
+     cursor: pointer;
+     color: rgb(65, 144, 144);
+     transition: 300ms ease-out ;
+     font-size: 16px;
+}

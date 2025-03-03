@@ -1,0 +1,55 @@
+  
+@media (max-width: 768px) {
+     .footer {
+          height: auto; /* Ajuste la hauteur automatiquement */
+          margin: 5px; /* Réduit l'espacement interne */
+          }
+          
+     .header__nav {
+         flex-direction: column; /* Empile les éléments verticalement */
+         height: 80px; /* Ajuste la hauteur automatiquement */
+         padding: 10px; /* Réduit l'espacement interne */
+     }
+ 
+     .nav__button {
+         font-size: 14px; /* Réduit la taille du texte sur les petits écrans */
+         padding: 6px 15px; /* Diminue le padding */
+     }
+
+     .card {
+        width: 350px;   
+        height: 300px;  
+        overflow: hidden;
+        cursor: pointer;
+        position: absolute;
+        color: #f0f0f0;
+        background-color: #ffffff;
+        box-shadow: 0 8px 25px 0px rgba(0, 0, 0, 0.5);
+        gap: 20px;
+        transition: 500ms;
+        top: 0;
+      }
+
+      .card:hover{
+        width: 370px;   
+        height: 320px;  
+      }
+
+      #prev, #next{
+        font-size: 20px;
+        top: 40%;
+      }
+
+     #next{
+        right: 10%;
+     } 
+
+     #prev{
+        left: 10%;
+     }
+
+     #prev:hover, #next:hover{
+        font-size: 25px;
+      }
+
+}

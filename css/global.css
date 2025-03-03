@@ -1,0 +1,19 @@
+/* --------- Réinitialisation des marges et paddings --------- */
+* {
+     margin: 0; /* Supprime toutes les marges par défaut */
+     padding: 0; /* Supprime tous les paddings par défaut */
+     box-sizing: border-box; /* Inclut le padding et les bordures dans les dimensions */
+     font-family: var(--clash-grotesk); /* Applique la police par défaut */
+     font-size: 14px;
+     font-weight: 400;
+ }
+ 
+ body {
+    margin: 0;
+    background: rgb(31, 30, 30);
+    color: #fcfcfc;
+ }
+
+ html {
+   scroll-behavior: smooth;
+ }

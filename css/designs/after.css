@@ -1,0 +1,19 @@
+.hero {
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.visuel_sketch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 12 colonnes de tailles égales */
+    grid-auto-rows: 700px;
+    gap: 10px; /* Espacement entre les colonnes et les lignes */
+}
+
+.cell3{
+    grid-column: 1 / 3; 
+    grid-row:2 / 3;
+}
