@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/test.css">
+     <link rel="stylesheet" href="/css/infos/jeudelavie.css"> 
+     <link rel="shortcut icon" href="" type="image/svg+xml">
+     <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.2.3/core.js"></script>
+
+     <title>KeviFolio</title>
+</head>
+     <body>
+          <header class="header">
+               <nav class="header__nav">
+                    <div class="nav__logo">
+                         <img src="" alt="Logo" class="nav__logo-img">
+                    </div>
+                    <div class="nav__button">
+                         <a href="../index.html#projet" class="nav__button P">Projet</a>
+                         <a href="../index.html#design" class="nav__button D">Design</a>
+                         <a href="../index.html#informatique" class="nav__button I">Informatique</a>
+                    </div>
+               </nav>
+          </header>
+
+            <main>
+               <div class="launcher">
+                    <div class="blabla">
+                         <div class="title">
+                              <h1>Jeu de la vie</h1>
+                         </div>
+                         <p id="infos">
+                              Le projet "Jeu de la Vie" est une implémentation en Python de l’automate cellulaire de John Conway, simulant l’évolution d’une grille de cellules selon des règles simples. Ce projet 
+                              met en pratique mes compétences en programmation orientée objet et en gestion d'interfaces graphiques.<br><br>
+                              Initialement développé en Python avec Tkinter, le projet fonctionnait bien en local, 
+                              mais posait des problèmes de portabilité et d'affichage. Pour le rendre accessible sur le web, il a été entièrement réécrit en JavaScript avec l’API Canvas.  
+                              Cette transition a nécessité d’adapter l’affichage, la gestion des événements utilisateur et l’optimisation de la simulation. Parmi les défis rencontrés, il a fallu traduire 
+                              les structures Python en tableaux JavaScript et ajuster le design CSS pour une meilleure ergonomie.  
+                              <br><br>Le projet final permet de dessiner des motifs, de démarrer et arrêter la simulation, ainsi que de réinitialiser la grille. Cette adaptation montre comment une application initialement 
+                              prévue pour un environnement de bureau peut être transformée en une version interactive et accessible directement depuis un navigateur.
+                         </p>
+                    </div>
+               </div>
+
+               <div class="ingame">
+                    <div class="py">
+                         <canvas id="gameCanvas"></canvas>
+                         <button id="start">Démarrer</button>
+                     </div>
+                     
+                     <script src="jeudelavie/gameoflife.js"></script>
+                                         
+               </div>
+                                   
+               <div class="end">
+                    <div class="info_suiv">
+                         <a href="portfolio.html">
+                             <button class="boutton_suiv">
+                                 ahhhr click
+                             </button>
+                         </a>
+                     </div>
+               </div>
+
+            </main>
+
+
+            <footer class="footer">
+               <div class="footer__logo">
+                    <img src="" alt="Logo_bis" class="footer_logo-img">
+               </div>
+               <div class="moi">
+                    <a href="../index.html#apropos" class="me">C'est moi</h5></a>
+               </div>
+               <div class="langue">
+                    <button class="fr">FR</button>
+                    <button class="en">EN</button>
+               </div>
+          </footer>
+
+          <script src="jeudelavie/gameoflige.js"></script>
+
+     </body>
+</html>  
