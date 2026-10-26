@@ -15,7 +15,7 @@
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
-    background: #1f1e1e;
+    background: #2a1c19;
     box-shadow: 0 20px 60px rgba(0,0,0,.45);
 }
 
@@ -41,14 +41,14 @@
     font-weight: 600;
     letter-spacing: .14em;
     text-transform: uppercase;
-    color: #a9a49a;
+    color: #d9a98a;
     margin-bottom: 18px;
 }
 
 .intro__title{
     font-family: var(--satoshi);
     font-weight: 800;
-    font-size: clamp(48px, 8vw, 120px);
+    font-size: clamp(44px, 6.6vw, 112px);
     line-height: .95;
     letter-spacing: -0.04em;
     text-transform: uppercase;
@@ -68,7 +68,7 @@
 .intro__search{
     font-family: var(--satoshi);
     font-size: clamp(14px, 1.2vw, 17px);
-    color: #cfcac0;
+    color: #f0dcc4;
     margin-top: 14px;
 }
 
@@ -99,7 +99,7 @@
 @media (max-width: 700px){
     .Intro{ padding: 0 10px 10px; }
     .intro__video{ border-radius: 14px; position: relative; }
-    .intro__video::after{ content: ""; position: absolute; inset: 0; background: rgba(31,30,30,.6); } /* lisibilité du texte sur mobile */
+    .intro__video::after{ content: ""; position: absolute; inset: 0; background: rgba(42,28,25,.62); } /* lisibilité du texte sur mobile */
     .intro__content{ left: 28px; right: 28px; }
     .intro__video video{ object-position: 70% center; }
     .intro__scroll{ right: 24px; bottom: 24px; width: 42px; height: 42px; }
